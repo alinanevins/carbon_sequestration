@@ -49,6 +49,6 @@ class UsersController < ApplicationController
     id = params['id']
     User.delete(id)
     flash[:notice] = "You've deleted your account"
-    redirect_to user_path
+    redirect_to "/"
   end
 end

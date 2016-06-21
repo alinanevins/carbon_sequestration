@@ -19,9 +19,28 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 
+<nav class="nav-wrapper teal lighten-5">
+    <a href="#" class="brand-logo">&nbsp;&nbsp;CO2 Destroyer</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+    <ul id="nav-mobile" class="right hide-on-med-and-down" style="padding: 15px;"">
+      <li><a class="waves-effect waves-light btn">Log in</a></li>
+      <li><a href="users/new" class="waves-effect waves-light btn">Sign Up</a></li>
+      <li><a href="trees/new" class="waves-effect waves-light btn">Collect a Tree</a></li>
+    </ul>
+
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="#">Log In</a></li>
+      <li><a href="user/new">Sign Up</a></li>
+      <li><a href="trees/new">Collect a Tree</a></li>
+    </ul>
+
+  </div>
+</nav>
+<div class="container">
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-
+</div>
 <%= yield %>
 
 </body>
