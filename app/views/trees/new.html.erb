@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="container">
 <h1>Add a New Tree</h1>
 <div class="row">
@@ -23,3 +24,27 @@
   </div>
 </div>
  
+=======
+<h1>Add a New Tree</h1>
+<%= form_for @tree do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><p/>
+
+  <%= f.label :species %>:
+  <%= f.text_field :species %><p/>
+
+  <%= f.label :diameter %>:
+  <%= f.text_field :diameter %><p/>
+
+  <%= f.label :mass %>:
+  <%= f.text_field :mass %><p/>
+
+  <%= f.label :co2_removed %>:
+  <%= f.text_field :co2_removed %><p/>
+
+  <%= f.label :user_id %>:
+  <%= f.text_field :user_id %><p/>
+
+  <%= f.submit %>
+<% end %>
+>>>>>>> f918c4afd076216ea7bf4436dc327385912192a0

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="container">
 <h1>All Trees</h1>
 
@@ -23,3 +24,14 @@
 </table>
 
 </div>
+=======
+<h1>All Trees</h1>
+<% @tree.each do |a| %>
+  <p>Tree Name: <%= a.name %>
+  <p>Tree Species: <%= a.species %>
+  <p>Diameter at Breast Height: <%= a.diameter %>
+  <p>Mass: <%= a.mass %>
+  <p>CO2 Removed: <%= a.co2_removed %>
+  <p>Owner: <%= a.user_id %>
+<% end %>
+>>>>>>> f918c4afd076216ea7bf4436dc327385912192a0

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="container">
   <h1><%= @tree.name %></h1>
   <p>Diameter at breast height: <%= @tree.diameter %> cm
@@ -6,3 +7,11 @@
   <p>Owner: <%= @tree.user_id %>
   <p><%= link_to "Edit your tree", "/trees/#{@tree.id}/edit", method: 'post' %>
 </div>
+=======
+<h1><%= @tree.name %></h1>
+<p>Diameter at breast height: <%= @tree.diameter %>
+<p>Mass: <%= @tree.mass %>
+<p>CO2 Removed: <%= @tree.co2_removed %>
+<p>Owner: <%= @tree.user_id %>
+<p><%= link_to "Edit your account", "/trees/#{@tree.id}/edit", method: 'post' %>
+>>>>>>> f918c4afd076216ea7bf4436dc327385912192a0

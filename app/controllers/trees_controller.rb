@@ -1,6 +1,9 @@
 class TreesController < ApplicationController
+<<<<<<< HEAD
 before_action :authenticate_user!
 
+=======
+>>>>>>> f918c4afd076216ea7bf4436dc327385912192a0
   def index
     @tree = Tree.all
   end
@@ -11,9 +14,14 @@ before_action :authenticate_user!
     a.name = tree_hash['name']
     a.species = tree_hash['species']
     a.diameter = tree_hash['diameter']
+<<<<<<< HEAD
     t = TreeService.new(a.diameter)
     a.mass = t.calculate_mass.round(2)
     a.co2_removed = t.calculate_co2.round(2)
+=======
+    a.mass = tree_hash['mass']
+    a.co2_removed = tree_hash['co2_removed']
+>>>>>>> f918c4afd076216ea7bf4436dc327385912192a0
     a.user_id = tree_hash['user_id']
 
     if a.save
@@ -55,6 +63,10 @@ before_action :authenticate_user!
     id = params['id']
     Tree.delete(id)
     flash[:notice] = "You've deleted your tree"
+<<<<<<< HEAD
     redirect_to "/trees"
+=======
+    redirect_to tree_path
+>>>>>>> f918c4afd076216ea7bf4436dc327385912192a0
   end
 end
