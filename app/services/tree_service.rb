@@ -1,9 +1,14 @@
 class TreeService
 
-  attr_accessor :diameter
+  attr_accessor :diameter # :circumference
 
   def initialize(diameter)
     @diameter = diameter
+    # @circumference = circumference
+  end
+
+  def calculate_diameter
+    @diameter = circumference / Math::PI
   end
 
   def calculate_mass

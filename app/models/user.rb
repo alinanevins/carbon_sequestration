@@ -5,6 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :trees
   validates :email, presence: true
-  validates :name, presence: true
+  
 
 end

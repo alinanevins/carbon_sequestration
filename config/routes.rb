@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   devise_for :users
   root 'welcome#index'
 
+  get '/carbon_sequestration' => 'welcome#carbon_sequestration'
+
   resources :trees
   resources :users
 

@@ -2,19 +2,27 @@
   <h1>Create a New Account</h1>
   <div class="row">
     <%= form_for(@user) do |f| %>
-    <div class="row">
-      <div class="input-field col s6"><%= f.label :first_name %><%= f.text_field :first_name %></p>
-      </div>
 
-      <div class="input-field col s6"><%= f.label :last_name %><%= f.text_field :last_name %></p>
+    <div class="row">
+      <div class="input-field col s6">
+        <%= f.label :first_name %>
+        <%= f.text_field :first_name %>
+      </div>
+      <div class="input-field col s6">
+        <%= f.label :last_name %>
+        <%= f.text_field :last_name %>
       </div>
     </div>
 
     <div class="row">
-      <div class="input-field col s6"><%= f.label :email %><%= f.text_field :email %></p>
+      <div class="input-field col s6">
+        <%= f.label :email %>
+        <%= f.text_field :email %>
       </div>
 
-      <div class="input-field col s6"><%= f.label :university_or_school %><%= f.text_field :university_or_school %></p>
+      <div class="input-field col s6">
+        <%= f.label :university_or_school %>
+        <%= f.text_field :university_or_school %>
       </div>
     </div>
 
